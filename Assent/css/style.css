@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	max-width: 1000%
+	margin: 0 auto;
+
+}
+
+.row:before , .row:after {
+	content: "";
+	display: table;	
+	clear: both;
+
+
+}
+
+[ class*= "col-"] {
+	float: left;
+	min-height: 7px;
+	padding:12px ;
+}
+.col-1{width: 8.333333%;}
+.col-2{width: 16.666667%;}
+.col-3{width: 25%;}
+.col-4{width: 33.333333%;}
+.col-5{width: 41.666667%;}
+.col-6{width: 50%;}
+.col-7{width: 58.333333%;}
+.col-8{width: 66.666667%;}
+.col-9{width: 75%;}
+.col-10{width: 83.333333%;}
+.col-11{width: 91.666667%;}
+.col-12{width: 100%;}
+
+img { width: 100%
+
+}
+@media (min-width: 576px ) and (max-width: 767px) {
+	body {
+		background-image: url(../img/dawn.png);
+	 	background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	.cat1 {
+		display: none;
+}
+
+	.cat2 {
+		display: none;
+	}
+}
+
+
+@media (min-width: 768px ) and (max-width: 991px) {
+	body {
+		background-image: url(../img/night.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+
+	.cat3 {
+		display: none;
+	}
+
+	.cat2 {
+		display: none;
+	}
+
+}
+@media (min-width: 992px ) and (max-width: 1199px) {
+	body {
+		background-image: url(../img/sunny-day.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	.cat3 {
+		display: none;
+	}
+
+	.cat1 {
+		display: none;
+	        }
+}
+
+
